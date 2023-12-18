@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <div id="main">
-      <ol id="#relativeList">
+      <ol id="relativeList">
         {data.map((item, index) => {
           return (
             <li
