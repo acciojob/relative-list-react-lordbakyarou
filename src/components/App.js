@@ -5,9 +5,16 @@ const App = () => {
 
   return (
     <div id="main">
-      <ol key={"relativeList"}>
+      <ol id="#relativeList">
         {data.map((item, index) => {
-          return <li key={"relativeListItem" + (index + 1)}>{item}</li>;
+          return (
+            <li
+              id={"relativeListItem" + (index + 1)}
+              key={"relativeListItem" + (index + 1)}
+            >
+              {item}
+            </li>
+          );
         })}
       </ol>
     </div>
